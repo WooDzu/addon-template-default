@@ -1,0 +1,22 @@
+{
+  "name": "airflow-template-default",
+  "version": "0.1.0",
+  "repository": "https://github.com/stefanpenner/ember-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install"
+
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "author": "WooDzu",
+  "license": "MIT",
+  "keywords": [
+    "ember-addon"
+  ],
+  "ember-addon": {
+    "before": "serve-files-middleware"
+  }
+}
