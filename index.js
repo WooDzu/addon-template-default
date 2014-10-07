@@ -8,10 +8,10 @@ module.exports = {
 
     this.app = app;
     this._super.included(app);
-    // var modulePath = path.relative(app.project.root, __dirname);
+    var modulePath = path.relative(app.project.root, __dirname);
 
-    app.import('vendor/bootstrap/dist/css/bootstrap.min.css');
-    app.import('vendor/bootstrap/dist/css/bootstrap-theme.min.css');
-    app.import('vendor/addon-template-default/styles/app.css');
+    app.import(path.join(modulePath, 'vendor/bootstrap/dist/css/bootstrap.min.css'));
+    app.import(path.join(modulePath, 'vendor/bootstrap/dist/css/bootstrap-theme.min.css'));
+    app.import(path.join(modulePath, 'vendor/addon-template-default/styles/app.css'));
   }
 };
